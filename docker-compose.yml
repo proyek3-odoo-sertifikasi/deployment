@@ -7,6 +7,7 @@ services:
       - odoo-db
     ports:
       - "${ODOO_PORT:-8069}:8069"
+      - "8072:8072"
     environment:
       - HOST=${HOST:-odoo-db}
       - USER=${POSTGRES_USER:-odoo}
@@ -25,7 +26,7 @@ services:
     image: postgres:17-alpine
     container_name: odoo-db
     ports:
-      - "${POSTGRES_PORT:-5432}:5432"
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
     environment:
       - POSTGRES_DB=${POSTGRES_DB:-postgres}
       - POSTGRES_USER=${POSTGRES_USER:-odoo}
