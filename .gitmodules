@@ -4,3 +4,6 @@
 [submodule "addons/manajement-asesor"]
 	path = addons/manajement-asesor
 	url = https://github.com/proyek3-odoo-sertifikasi/plugins-manajement-asesor.git
+[submodule "addons/registrasi"]
+	path = addons/registrasi
+	url = https://github.com/proyek3-odoo-sertifikasi/plugins-registrasi.git
