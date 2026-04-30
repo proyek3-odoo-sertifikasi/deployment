@@ -1,0 +1,3 @@
+[submodule "addons/computer-base-test"]
+	path = addons/computer-base-test
+	url = https://github.com/proyek3-odoo-sertifikasi/plugins-computer-base-test.git
