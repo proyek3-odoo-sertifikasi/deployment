@@ -1,0 +1,46 @@
+services:
+  odoo-web:
+    image: odoo:19
+    container_name: odoo-web
+    user: root
+    depends_on:
+      - odoo-db
+    ports:
+      - "${ODOO_PORT:-8069}:8069"
+    environment:
+      - HOST=${HOST:-odoo-db}
+      - USER=${POSTGRES_USER:-odoo}
+      - PASSWORD=${POSTGRES_PASSWORD:-odoo}
+      - POSTGRES_DB=${POSTGRES_DB:-postgres}
+    volumes:
+      - ./data/odoo:/var/lib/odoo
+      - ./config:/etc/odoo
+      - ./addons:/mnt/extra-addons
+    networks:
+      - odoo-proyek3
+    restart: unless-stopped
+    entrypoint: ["/bin/bash", "-c", "chown -R odoo:odoo /var/lib/odoo && chmod -R 755 /var/lib/odoo && runuser -u odoo -- /usr/bin/odoo"]
+
+  odoo-db:
+    image: postgres:17-alpine
+    container_name: odoo-db
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB:-postgres}
+      - POSTGRES_USER=${POSTGRES_USER:-odoo}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-odoo}
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+    networks:
+      - odoo-proyek3
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+networks:
+  odoo-proyek3:
+    driver: bridge

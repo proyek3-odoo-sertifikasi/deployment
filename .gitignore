@@ -1,0 +1,36 @@
+# Environment variables
+.env
+
+# Data directories (but keep .gitkeep files)
+data/*
+!data/.gitkeep
+!data/odoo/.gitkeep
+!data/postgres/.gitkeep
+
+# Odoo filestore
+filestore/
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
