@@ -1,8 +1,8 @@
 [submodule "addons/computer-base-test"]
-	path = addons/computer-base-test
+	path = addons/computer_base_test
 	url = https://github.com/proyek3-odoo-sertifikasi/plugins-computer-base-test.git
 [submodule "addons/manajement-asesor"]
-	path = addons/manajement-asesor
+	path = addons/manajement_asesor
 	url = https://github.com/proyek3-odoo-sertifikasi/plugins-manajement-asesor.git
 [submodule "addons/registrasi"]
 	path = addons/registrasi
