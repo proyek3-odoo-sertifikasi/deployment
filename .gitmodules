@@ -7,3 +7,6 @@
 [submodule "addons/registrasi"]
 	path = addons/registrasi
 	url = https://github.com/proyek3-odoo-sertifikasi/plugins-registrasi.git
+[submodule "addons/website_lsp"]
+	path = addons/website_lsp
+	url = https://github.com/proyek3-odoo-sertifikasi/plugins_website_lsp.git
