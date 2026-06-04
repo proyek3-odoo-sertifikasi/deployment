@@ -19,3 +19,6 @@
 [submodule "addons/lsp_survey"]
 	path = addons/lsp_survey
 	url = https://github.com/proyek3-odoo-sertifikasi/plugins_lsp_survey.git
+[submodule "addons/custom_billing"]
+	path = addons/custom_billing
+	url = https://github.com/proyek3-odoo-sertifikasi/plugins_custom_billing_module.git
