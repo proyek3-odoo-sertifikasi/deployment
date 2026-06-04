@@ -1,12 +1,12 @@
 [submodule "addons/computer-base-test"]
 	path = addons/computer_base_test
-	url = https://github.com/proyek3-odoo-sertifikasi/plugins-computer-base-test.git
+	url = https://github.com/proyek3-odoo-sertifikasi/plugins_computer_base_test.git
 [submodule "addons/manajement-asesor"]
 	path = addons/manajement_asesor
-	url = https://github.com/proyek3-odoo-sertifikasi/plugins-manajement-asesor.git
+	url = https://github.com/proyek3-odoo-sertifikasi/plugins_manajement_asesor.git
 [submodule "addons/registrasi"]
 	path = addons/registrasi
-	url = https://github.com/proyek3-odoo-sertifikasi/plugins-registrasi.git
+	url = https://github.com/proyek3-odoo-sertifikasi/plugins_registrasi.git
 [submodule "addons/website_lsp"]
 	path = addons/website_lsp
 	url = https://github.com/proyek3-odoo-sertifikasi/plugins_website_lsp.git
