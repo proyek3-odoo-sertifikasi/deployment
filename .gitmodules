@@ -10,3 +10,6 @@
 [submodule "addons/website_lsp"]
 	path = addons/website_lsp
 	url = https://github.com/proyek3-odoo-sertifikasi/plugins_website_lsp.git
+[submodule "addons/sertifikasi"]
+	path = addons/sertifikasi
+	url = https://github.com/proyek3-odoo-sertifikasi/plugins_sertifikasi.git
