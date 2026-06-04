@@ -16,3 +16,6 @@
 [submodule "addons/penilaian"]
 	path = addons/penilaian
 	url = https://github.com/proyek3-odoo-sertifikasi/plugins_penilaian.git
+[submodule "addons/lsp_survey"]
+	path = addons/lsp_survey
+	url = https://github.com/proyek3-odoo-sertifikasi/plugins_lsp_survey.git
